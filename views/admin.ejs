@@ -1,0 +1,13 @@
+<h1 class="mt-4">Dashboard</h1>
+<p class="lead mb-3">Welcome <%= user.name %></p>
+<a href="/auth/logout" class="btn btn-secondary">Logout</a>
+
+<h2>Current Active Sessions: </br>
+    SessionID: <%= session.session.id %>  </br>
+    UserID: <%= session.user.id %>
+    <form method="DELETE" action="">
+    <button class="delete">Revoke Session</button>
+    </form>
+    
+</h2>
+    
