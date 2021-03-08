@@ -21,8 +21,8 @@ const localLogin = new LocalStrategy(
 //gitHubStrategy task 1
  const gitHubLogin = new gitHubStrategy(
    {
-     clientID: 'a9fc2972f2bf718a90da',
-     clientSecret: 'aa28e93b70b75955e09683b304aee1433c630a2b',
+     clientID: process.env.clientID,
+     clientSecret: process.env.clientSecret,
      callbackURL: 'http://localhost:8000/auth/login/github/callback',  
    },
    function(accessToken, refeshToken, profile, cb){
